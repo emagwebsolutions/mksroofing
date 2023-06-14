@@ -52,22 +52,44 @@ export default function Home() {
               title="Wood Work"
               text="Roofing for new buildings. Roofing of new structures is our Hallmark and we at Adepaye offer the best roofing systems and quality designs for our valued"
             />
-
           </div>
 
-          <Button cls="serv-btn" url="">More Services</Button>
+          <Button cls="button mt-10 m-auto" url="">
+            More Services
+          </Button>
         </div>
       </section>
 
 
 
 
-<section>
-  
-</section>
+      <section>
+        <div className="container">
+
+          
+          <div>
+            <h1>Get a Free Quote!</h1>
+            <p>
+              Whether it a brand new installation, or work on an existing
+              property, MKS Roofing Systems is a full service provider of
+              roofing.
+            </p>
+          </div>
 
 
+          <div className="flex gap-4">
+            <Button cls="button" url="">
+              REQUEST A FREE QUOTE
+            </Button>
+ 
+            <a href="tel:233209877300" className="button-outline">
+              CALL +233 209 877 300
+            </a>
+          </div>
 
+
+        </div>
+      </section>
 
 
 

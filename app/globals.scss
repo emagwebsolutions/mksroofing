@@ -19,14 +19,44 @@ body {
   padding-inline: 8rem;
 }
 
-.heading-box{
-  width: 40rem; 
+.heading-box {
+  width: 40rem;
   margin-inline: auto;
   text-align: center;
-  h1{
+  h1 {
     font-size: 5rem;
   }
-  p{
+  p {
     color: #555;
   }
+}
+
+.button {
+  display: block;
+  background-color: #c21d2e;
+  color: white;
+  width: fit-content;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 0.6rem;
+  border: solid .1rem #c21d2e;
+  &:hover{
+    background-color: white;
+    color: #c21d2e;
+  }
+}
+
+.button-outline {
+  display: block;
+  border: solid .1rem #222;
+  color: #222;
+  width: fit-content;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 0.6rem;
+  &:hover{
+    background-color: #c21d2e;
+    color: white;
+  }
+
 }

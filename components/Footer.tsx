@@ -50,7 +50,6 @@ const Footer = () => {
       <div className="bg-gray-900 py-9">
         <div className="container text-center text-gray-400">
           &copy; Copyright MKS Roofing Systems. Designed by Emagweb Solutions
-          Innovations
         </div>
       </div>
     </>
