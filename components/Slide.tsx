@@ -1,33 +1,40 @@
-// import { Fade } from 'react-slideshow-image';
-// import 'react-slideshow-image/dist/styles.css';
-// import Image from 'next/image';
-// import {slides} from '@/typings'
-// import { useSelector } from 'react-redux';
-// import { selectSliderState } from '@/store/features/sliderSlice';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
+import Image from 'next/image';
 
+const Slider = () => {
+  const images = [
+    { url: '/slider1.jpg' },
+    { url: '/slider2.jpg' },
+    { url: '/slider3.jpg' },
+    { url: '/slider4.jpg' },
+  ];
 
-// const Slide = () => {
-//   const fadeImages: slides = useSelector(selectSliderState);
+  return (
+    <div className="slide-container">
+      <Slide>
+        {images.map((fadeImage, index) => (
+          <div className="each-fade" key={index}>
+            <Image
+              priority
+              width={1300}
+              height={400}
+              alt=""
+              src={fadeImage.url}
+            />
+          </div>
+        ))}
+      </Slide>
 
-//   return (
-//     <div className="slide-container">
-//       <Fade>
-//         {fadeImages.map((fadeImage, index) => (
-//           <div className="each-fade" key={index}>
-//             <div className="image-container">
-//               <Image
-//                 priority
-//                 width="800"
-//                 height="550"
-//                 alt=""
-//                 src={fadeImage.url}
-//               />
-//             </div>
-//           </div>
-//         ))}
-//       </Fade>
-//     </div>
-//   );
-// };
+      <div className="header-title">
+        <h1>
+          <span>Welcome to</span> <br />
+          <span>MKS ROOFING SYSTEMS</span>
+        </h1>
+        <p>We are into all types of Roofing works</p>
+      </div>
+    </div>
+  );
+};
 
-// export default Slide;
+export default Slider;

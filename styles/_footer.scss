@@ -1,0 +1,15 @@
+footer{
+    background-image: url('/footerimg.jpg');
+    background-size: cover;
+    background-color: #c21d2e;
+    background-position: right;
+    color: white;
+    padding-block: 5em;
+    h1{
+        font-size: 3rem;
+        margin-bottom: .5em;
+    }
+    ul{
+        line-height: 2;
+    }
+}

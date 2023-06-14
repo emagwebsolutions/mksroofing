@@ -2,5 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import '../styles/nav.scss';
+@import '../styles/footer.scss';
+@import '../styles/home.scss';
+@import '../styles/slider.scss';
 
+:root {
+  font-size: 62%;
+}
+body {
+  font-size: 1.8rem;
+}
+
+.container {
+  padding-inline: 8rem;
+}
+
+.heading-box{
+  width: 40rem; 
+  margin-inline: auto;
+  text-align: center;
+  h1{
+    font-size: 5rem;
+  }
+  p{
+    color: #555;
+  }
+}
