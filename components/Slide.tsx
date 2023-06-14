@@ -28,7 +28,7 @@ const Slider = () => {
 
       <div className="header-title">
         <h1>
-          <span>Welcome to</span> <br />
+          <span></span>
           <span>MKS ROOFING SYSTEMS</span>
         </h1>
         <p>We are into all types of Roofing works</p>
