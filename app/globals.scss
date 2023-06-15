@@ -13,10 +13,17 @@
 }
 body {
   font-size: 1.8rem;
+  position: relative;
 }
 
 .container {
   padding-inline: 8rem;
+}
+
+@media(max-width: 35em){
+  .container {
+    padding-inline: 0; 
+  }
 }
 
 .heading-box {

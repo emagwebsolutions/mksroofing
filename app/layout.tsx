@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import './globals.scss';
 import Footer from '@/components/Footer';
+import Hamburger from '@/components/Hamburger';
 
 export const metadata = {
   title: 'MKS Roofing Systems',
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Hamburger />
         <Nav />
         {children}
         <Footer />

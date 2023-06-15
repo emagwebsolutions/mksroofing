@@ -6,10 +6,12 @@ const Nav = () => {
   return (
     <nav>
       <div className="container">
-        <div className="text-white relative">
 
-          <div className="flex justify-between py-5 top-bar">
-            <div className="flex gap-10">
+        <div className="relative navbx">
+
+          <div>
+
+            <div>
               <span>
                 <i className="fa fa-phone"></i>&nbsp; +233 209 877 300
               </span>
@@ -24,7 +26,9 @@ const Nav = () => {
               </span>
             </div>
 
-            <div className="flex gap-5">
+
+
+            <div>
               <Link href="/">
                 <i className="fa fa-facebook"></i>
               </Link>
@@ -32,11 +36,16 @@ const Nav = () => {
                 <i className="fa fa-instagram"></i>
               </Link>
             </div>
+
+
           </div>
 
-          <div className="flex justify-between py-4 sticky-nav">
+
+
+
+          <div>
             <Image width="110" alt="Logo" height="80" src="/logo.jpg" />
-            <ul className="flex gap-10 items-center nav-links">
+            <ul className="nav-links">
               <Links name="HOME" link="/" />
               <Links name="ABOUT" link="/" />
               <Links name="SERVICE" link="/" />
@@ -45,8 +54,14 @@ const Nav = () => {
               <Links name="CONTACT" link="/" />
             </ul>
           </div>
+
+
         </div>
+
+
+
         <div className="nav-overlay"></div>
+
       </div>
     </nav>
   );
