@@ -9,7 +9,7 @@ type Card = {
 
 const Servicescard = ({ img, title, text }: Card) => {
   return (
-    <div className="flex-1 bg-white service-bx">
+    <div className="bg-white service-bx">
       <div>
         <Image width="270" height="100" alt="" src={img} />
       </div>

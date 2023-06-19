@@ -1,16 +1,20 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Links from './Links';
 
-const Nav = () => {
+type sh = {
+  show: boolean
+  hide: ()=> void
+}
+
+const Nav = ({show,hide}: sh) => {
   return (
     <nav>
       <div className="container">
-
-        <div className="relative navbx">
-
+        <div className={ `${show ? 'show' : ''} relative navbx`} >
           <div>
-
             <div>
               <span>
                 <i className="fa fa-phone"></i>&nbsp; +233 209 877 300
@@ -26,8 +30,6 @@ const Nav = () => {
               </span>
             </div>
 
-
-
             <div>
               <Link href="/">
                 <i className="fa fa-facebook"></i>
@@ -36,12 +38,7 @@ const Nav = () => {
                 <i className="fa fa-instagram"></i>
               </Link>
             </div>
-
-
           </div>
-
-
-
 
           <div>
             <Image width="110" alt="Logo" height="80" src="/logo.jpg" />
@@ -54,14 +51,9 @@ const Nav = () => {
               <Links name="CONTACT" link="/" />
             </ul>
           </div>
-
-
         </div>
 
-
-
-        <div className="nav-overlay"></div>
-
+        <div onClick={hide} className= {`${show ? 'show' : ''} nav-overlay`}></div>
       </div>
     </nav>
   );

@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container flex gap-10">
-          <div className="flex-1">
+        <div className="container">
+          <div>
             <h1>About Us</h1>
             <div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
@@ -15,7 +15,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex-1">
+          <div>
             <h1>Contact Us</h1>
             <ul>
               <li>
@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex-1">
+          <div>
             <h1>Services</h1>
             <ul>
               <Links icon="fa fa-angle-right" name="HOME" link="/" />

@@ -1,7 +1,9 @@
+'use client'
 import Nav from '@/components/Nav';
 import './globals.scss';
 import Footer from '@/components/Footer';
 import Hamburger from '@/components/Hamburger';
+import { useState } from 'react';
 
 export const metadata = {
   title: 'MKS Roofing Systems',
@@ -13,11 +15,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [showNav, setShowNav] = useState(false);
+
+  const handleHamburger = () => {
+    setShowNav(true)
+  };
+
+  const hideHamburger = () => {
+    setShowNav(false)
+  };
+
   return (
     <html lang="en">
       <body>
-        <Hamburger />
-        <Nav />
+        <Hamburger handleHamburger={handleHamburger} />
+        <Nav show={showNav} hide={hideHamburger} />
         {children}
         <Footer />
       </body>

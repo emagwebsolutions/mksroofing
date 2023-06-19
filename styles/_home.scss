@@ -1,89 +1,234 @@
-.home {
-  position: relative;
-
-  section:nth-of-type(1) {
-    & > div:nth-of-type(1) {
-      padding: 3em;
-    }
-
-    & > div:nth-of-type(2) {
-      background-image: url('/installer.jpg');
-      background-position: right;
-      background-repeat: no-repeat;
-    }
-
-    height: 40rem;
-    h1 {
-      font-size: 5rem;
-      color: #555;
-    }
-  }
-  section:nth-of-type(2) {
-    background-color: #f5f2f2;
-    padding-block: 2em;
-    h1 {
-      font-size: 5rem;
-      color: #555;
-    }
-  }
-
-  section:nth-of-type(3) {
-    background-image: url('/quote-bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    padding-block: 3em;
+@media (min-width: 35em) {
+  .home {
     position: relative;
-    z-index: 2;
 
-    & > div {
+    section:nth-of-type(1) {
       display: flex;
-      align-items: center;
-      gap: 4rem;
 
-      & > div:nth-of-type(1) {
-        h1{
-          font-size: 2rem;
-          font-weight: bold;
-        }
-
-      }
-
-
-      & > div:nth-of-type(2) {
-        display: flex;
-        justify-content: flex-end;
-        & > a {
-          display: block;
-        }
-      }
       & > div {
         flex: 1rem 1 1;
       }
+      & > div:nth-of-type(1) {
+        padding: 3em;
+      }
+
+      & > div:nth-of-type(2) {
+        background-image: url('/installer.jpg');
+        background-position: right;
+        background-repeat: no-repeat;
+      }
+
+      height: 40rem;
+      h1 {
+        font-size: 5rem;
+        color: #555;
+      }
     }
 
+    section:nth-of-type(2) {
+      background-color: #f5f2f2;
+      padding-block: 2em;
+      h1 {
+        font-size: 5rem;
+        color: #555;
+      }
+      & > div {
+        & > div {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+    }
 
+    section:nth-of-type(3) {
+      background-image: url('/quote-bg.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      padding-block: 3em;
+      position: relative;
+      z-index: 2;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      z-index: -2;
-      background-color: rgba(255, 255, 255, 0.5);
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        & > div:nth-of-type(1) {
+          h1 {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+
+        & > div:nth-of-type(2) {
+          display: flex;
+          justify-content: flex-end;
+          & > a {
+            display: block;
+          }
+        }
+        & > div {
+          flex: 1rem 1 1;
+        }
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -2;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .service-bx {
+      & > div:nth-of-type(1) {
+        height: 13rem;
+        overflow: hidden;
+      }
+      h2 {
+        margin-block: 0.4em;
+        font-size: 2.5rem;
+        color: #555;
+      }
     }
   }
+}
 
-  .service-bx {
-    & > div:nth-of-type(1) {
-      height: 13rem;
-      overflow: hidden;
+
+
+
+
+
+
+
+@media (max-width: 35em) {
+  .home {
+    position: relative;
+
+    section:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+
+      & > div {
+        flex: 1rem 1 1;
+      }
+      & > div:nth-of-type(1) {
+        padding: 3em;
+      }
+
+      & > div:nth-of-type(2) {
+        background-image: url('/installer.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+
+      height: 70rem;
+      h1 {
+        font-size: 5rem;
+        color: #555;
+      }
     }
-    h2 {
-      margin-block: 0.4em;
-      font-size: 2.5rem;
-      color: #555;
+
+    section:nth-of-type(2) {
+      background-color: #f5f2f2;
+      padding-block: 2em;
+      h1 {
+        font-size: 5rem;
+        color: #555;
+      }
+      & > div {
+        & > div {
+          gap: 2rem;
+          & > div {
+            margin-bottom: 3rem;
+          }
+        }
+      }
     }
+
+    section:nth-of-type(2) {
+      background-color: #f5f2f2;
+      padding-block: 2em;
+      h1 {
+        font-size: 5rem;
+        color: #555;
+      }
+    }
+
+    .service-bx {
+      & > div:nth-of-type(1) {
+        height: 13rem;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      h2 {
+        margin-block: 0.4em;
+        font-size: 2.5rem;
+        color: #555;
+      }
+    }
+
+
+
+
+
+    section:nth-of-type(3) {
+      background-image: url('/quote-bg.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      padding-block: 3em;
+      position: relative;
+      z-index: 2;
+
+      & > div {
+       padding: 2em;
+      
+
+        & > div:nth-of-type(1) {
+          h1 {
+            font-size: 2rem;
+            font-weight: bold;
+          }
+        }
+
+        & > div:nth-of-type(2) {
+          display: flex;
+          margin-top: 2rem;
+
+          & > a {
+            display: block;
+          }
+        }
+        & > div {
+          flex: 1rem 1 1;
+        }
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: -2;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+
+
+
+
+
+
+
+
   }
 }

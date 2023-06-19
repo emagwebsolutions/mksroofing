@@ -8,8 +8,11 @@ export default function Home() {
     <div className="home">
       <Slider />
 
-      <section className="flex">
-        <div className="flex-1">
+
+
+
+      <section>
+        <div>
           <h1>Who we are</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
@@ -18,8 +21,13 @@ export default function Home() {
             impedit. Perspiciatis, totam ipsa. Earum, temporibus tempore?
           </p>
         </div>
-        <div className="flex-1"></div>
+        <div></div>
       </section>
+
+
+
+
+
 
       <section>
         <div className="heading-box">
@@ -28,12 +36,13 @@ export default function Home() {
         </div>
 
         <div className="container py-4">
-          <div className="shadow-xl flex gap-8 p-10 bg-white">
+          <div className="shadow-xl  p-10 bg-white">
+
             <Servicescard
               img="/new-roofing.jpeg"
               title="New Roofing"
               text="Roofing for new buildings. Roofing of new structures is our Hallmark and we at Adepaye offer the best roofing systems and quality designs for our valued"
-            />
+            /> 
 
             <Servicescard
               img="/re-roofing.jpg"
@@ -63,10 +72,9 @@ export default function Home() {
 
 
 
+
       <section>
         <div className="container">
-
-          
           <div>
             <h1>Get a Free Quote!</h1>
             <p>
@@ -76,21 +84,17 @@ export default function Home() {
             </p>
           </div>
 
-
           <div className="flex gap-4">
             <Button cls="button" url="">
               REQUEST A FREE QUOTE
             </Button>
- 
+
             <a href="tel:233209877300" className="button-outline">
               CALL +233 209 877 300
             </a>
           </div>
-
-
         </div>
       </section>
-
 
 
 
