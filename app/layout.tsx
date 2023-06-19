@@ -15,23 +15,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [showNav, setShowNav] = useState(false);
 
-  const handleHamburger = () => {
-    setShowNav(true)
-  };
 
-  const hideHamburger = () => {
-    setShowNav(false)
-  };
 
   return (
     <html lang="en">
       <body>
-        <Hamburger handleHamburger={handleHamburger} />
-        <Nav show={showNav} hide={hideHamburger} />
         {children}
-        <Footer />
       </body>
     </html>
   );

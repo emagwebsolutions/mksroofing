@@ -47,7 +47,6 @@ const Nav = ({show,hide}: sh) => {
               <Links name="ABOUT" link="/" />
               <Links name="SERVICE" link="/" />
               <Links name="PRODUCTS" link="/" />
-              <Links name="PROJECT" link="/" />
               <Links name="CONTACT" link="/" />
             </ul>
           </div>

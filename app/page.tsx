@@ -2,14 +2,13 @@
 import Button from '@/components/Button';
 import Servicescard from '@/components/Servicescard';
 import Slider from '@/components/Slide';
+import Universal from '@/components/Universal';
 
 export default function Home() {
   return (
+    <Universal>
     <div className="home">
       <Slider />
-
-
-
 
       <section>
         <div>
@@ -24,11 +23,6 @@ export default function Home() {
         <div></div>
       </section>
 
-
-
-
-
-
       <section>
         <div className="heading-box">
           <h1>Our Services</h1>
@@ -37,12 +31,11 @@ export default function Home() {
 
         <div className="container py-4">
           <div className="shadow-xl  p-10 bg-white">
-
             <Servicescard
               img="/new-roofing.jpeg"
               title="New Roofing"
               text="Roofing for new buildings. Roofing of new structures is our Hallmark and we at Adepaye offer the best roofing systems and quality designs for our valued"
-            /> 
+            />
 
             <Servicescard
               img="/re-roofing.jpg"
@@ -69,10 +62,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
-
       <section>
         <div className="container">
           <div>
@@ -95,9 +84,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
     </div>
+    </Universal>
   );
 }

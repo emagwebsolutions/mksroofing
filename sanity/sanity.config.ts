@@ -1,5 +1,7 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
+import schemas from './schemas'
+
 
 const config = defineConfig({
     dataset: 'production',
@@ -7,7 +9,8 @@ const config = defineConfig({
     title : 'MKS',
     apiVersion: '2023-06-17',
     plugins: [deskTool()],
-    basePath: '/studio'
+    basePath: '/dashboard',
+    schema: {types: schemas}
 })
 
 export default config
