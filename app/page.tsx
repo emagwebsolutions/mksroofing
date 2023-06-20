@@ -14,7 +14,7 @@ export default function Home() {
         <div>
           <h1>Who we are</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            Loremg ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             molestias tempore sequi mollitia perspiciatis, repellat corporis,
             obcaecati, commodi reprehenderit debitis quo repudiandae magnam
             impedit. Perspiciatis, totam ipsa. Earum, temporibus tempore?

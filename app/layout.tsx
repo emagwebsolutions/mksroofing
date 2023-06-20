@@ -1,9 +1,5 @@
-'use client'
-import Nav from '@/components/Nav';
+
 import './globals.scss';
-import Footer from '@/components/Footer';
-import Hamburger from '@/components/Hamburger';
-import { useState } from 'react';
 
 export const metadata = {
   title: 'MKS Roofing Systems',
@@ -15,14 +11,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-
-
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,19 +1,19 @@
-'use client'
+'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import Links from './Links';
 
 type sh = {
-  show: boolean
-  hide: ()=> void
-}
+  show: boolean;
+  hide: () => void;
+};
 
-const Nav = ({show,hide}: sh) => {
+const Nav = ({ show, hide }: sh) => {
   return (
     <nav>
       <div className="container">
-        <div className={ `${show ? 'show' : ''} relative navbx`} >
+        <div className={`${show ? 'show' : ''} relative navbx`}>
           <div>
             <div>
               <span>
@@ -52,7 +52,10 @@ const Nav = ({show,hide}: sh) => {
           </div>
         </div>
 
-        <div onClick={hide} className= {`${show ? 'show' : ''} nav-overlay`}></div>
+        <div
+          onClick={hide}
+          className={`${show ? 'show' : ''} nav-overlay`}
+        ></div>
       </div>
     </nav>
   );

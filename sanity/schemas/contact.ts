@@ -41,6 +41,11 @@ const contact = {
       type: 'string',
     },
     {
+      name: 'googlemap',
+      title: 'Google Map',
+      type: 'string',
+    },
+    {
       name: 'gps',
       title: 'GPS Address',
       type: 'string',
