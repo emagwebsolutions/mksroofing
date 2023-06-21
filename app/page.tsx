@@ -3,8 +3,29 @@ import Button from '@/components/Button';
 import Servicescard from '@/components/Servicescard';
 import Slider from '@/components/Slide';
 import Universal from '@/components/Universal';
+import {useDispatch,useSelector} from 'react-redux'
+import {getAllPosts} from '@/store/features/homeSlice';
+import { useGetpostsQuery} from '@/store/features/fetchQuerySlice';
 
 export default function Home() {
+
+  const {data} = useGetpostsQuery('')
+
+  const dispatch = useDispatch()
+  dispatch(getAllPosts('God is in control'))
+
+
+  const res = useSelector(state => state)
+
+  if(res){
+    console.log(data)
+  }
+
+
+
+
+
+
   return (
     <Universal>
     <div className="home">

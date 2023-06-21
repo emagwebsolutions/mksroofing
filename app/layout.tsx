@@ -1,5 +1,7 @@
-
+'use client'
+import store from '@/store/store';
 import './globals.scss';
+import {Provider} from 'react-redux'
 
 export const metadata = {
   title: 'MKS Roofing Systems',
@@ -13,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Provider store={store}>
+        {children}
+        </Provider>
+        </body>
     </html>
   );
 }
