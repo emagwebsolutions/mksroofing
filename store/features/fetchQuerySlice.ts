@@ -3,13 +3,16 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const fetchData = createApi({
   reducerPath: 'fetchData',
   baseQuery: fetchBaseQuery({
-    baseUrl: "/api"
+    baseUrl: '/api',
   }),
   endpoints: (builder) => ({
     getposts: builder.query({
-      query: (args: any) => "/fetchpost"
-    })
-  })
+      query: (args: any) => '/fetchpost',
+    }),
+    getslides: builder.query({
+      query: (args: any) => '/fetchslides',
+    }),
+  }),
 });
 
-export const { useGetpostsQuery} = fetchData
+export const { useGetpostsQuery,useGetslidesQuery } = fetchData;
