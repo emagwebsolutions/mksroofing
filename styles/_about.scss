@@ -1,0 +1,60 @@
+.about {
+  & > section:nth-of-type(1) {
+    display: flex;
+    div {
+      flex: 4rem 1 1;
+      height: 50rem;
+      overflow: hidden;
+      &:nth-of-type(1) {
+        background-color: #f2f2f2;
+        padding: 4em;
+      }
+    }
+  }
+
+  & > section:nth-of-type(2) {
+    text-align: center;
+    padding-block: 7rem;
+    h2 {
+      font-size: 4rem;
+    }
+    & > div {
+      & > div {
+        display: flex;
+        gap: 2rem;
+
+        .service-bx {
+          margin-top: 3em;
+          background-color: red;
+          height: 17rem;
+          overflow: hidden;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+          }
+          & > div:nth-of-type(2) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            h2 {
+              font-size: 2rem;
+              font-weight: bold;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > section:nth-of-type(3) {
+  }
+}

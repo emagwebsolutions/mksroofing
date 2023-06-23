@@ -1,11 +1,12 @@
-'use client'
+'use client';
 
+import Cover from '@/components/Cover';
 import Universal from '@/components/Universal';
 
 const Contact = () => {
   return (
     <Universal>
-      <div>Contact</div>
+      <Cover name="Contact Us" />
     </Universal>
   );
 };

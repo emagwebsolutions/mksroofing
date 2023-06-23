@@ -1,24 +1,25 @@
 import Links from './Links';
-import { useGetcontactQuery, useGetpostsQuery } from '@/store/features/fetchQuerySlice';
+import {
+  useGetcontactQuery,
+  useGetpostsQuery,
+} from '@/store/features/fetchQuerySlice';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { contactdetails } from '@/store/features/contactSlice';
 import { getAllPosts } from '@/store/features/homeSlice';
 
 const Footer = () => {
-
   const { data: posts } = useGetpostsQuery('');
   const { data } = useGetcontactQuery('');
 
   const dispatch = useDispatch();
-
 
   useEffect(() => {
     if (data) {
       dispatch(contactdetails(data));
       dispatch(getAllPosts(posts));
     }
-  }, [data, dispatch,posts]);
+  }, [data, dispatch, posts]);
 
   const about = useSelector((state: any) => state?.home?.about)[0];
 

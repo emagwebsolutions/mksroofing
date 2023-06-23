@@ -1,11 +1,12 @@
-'use client'
+'use client';
 
+import Cover from '@/components/Cover';
 import Universal from '@/components/Universal';
 
 const Products = () => {
   return (
     <Universal>
-      <div>Products</div>
+      <Cover name="Products" />
     </Universal>
   );
 };
