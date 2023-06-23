@@ -3,38 +3,21 @@ import Button from '@/components/Button';
 import Servicescard from '@/components/Servicescard';
 import Slider from '@/components/Slide';
 import Universal from '@/components/Universal';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAllPosts } from '@/store/features/homeSlice';
-import { useGetpostsQuery } from '@/store/features/fetchQuerySlice';
-import { useEffect } from 'react';
-
+import { useSelector } from 'react-redux';
 
 export default function Home() {
-  const { data } = useGetpostsQuery('');
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (data) {
-      dispatch(getAllPosts(data));
-    }
-  }, [dispatch, data]);
 
   const about = useSelector((state: any) => state?.home?.about)[0];
   const serviceArr = useSelector((state: any) => state?.home?.services);
 
-
-
-  const services = Object.values(serviceArr).filter( (v: any) => v.excerpt !== null).map((v: any, k) => {
-    return (
-      <Servicescard
-        key={k}
-        img={v.image}
-        title={v.title}
-        text={v.excerpt}
-      />
-    );
-  }).slice(0,4);
+  const services = Object.values(serviceArr)
+    .filter((v: any) => v.excerpt !== null)
+    .map((v: any, k) => {
+      return (
+        <Servicescard key={k} img={v.image} title={v.title} text={v.excerpt} />
+      );
+    })
+    .slice(0, 4);
 
   return (
     <Universal>

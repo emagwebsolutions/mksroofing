@@ -44,10 +44,10 @@ const Nav = ({ show, hide }: sh) => {
             <Image width="110" alt="Logo" height="80" src="/logo.jpg" />
             <ul className="nav-links">
               <Links name="HOME" link="/" />
-              <Links name="ABOUT" link="/" />
-              <Links name="SERVICE" link="/" />
-              <Links name="PRODUCTS" link="/" />
-              <Links name="CONTACT" link="/" />
+              <Links name="ABOUT" link="/about" />
+              <Links name="SERVICE" link="/service" />
+              <Links name="PRODUCTS" link="/products" />
+              <Links name="CONTACT" link="/contact" />
             </ul>
           </div>
         </div>

@@ -1,34 +1,53 @@
 import Links from './Links';
+import { useGetcontactQuery, useGetpostsQuery } from '@/store/features/fetchQuerySlice';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { contactdetails } from '@/store/features/contactSlice';
+import { getAllPosts } from '@/store/features/homeSlice';
 
 const Footer = () => {
+
+  const { data: posts } = useGetpostsQuery('');
+  const { data } = useGetcontactQuery('');
+
+  const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    if (data) {
+      dispatch(contactdetails(data));
+      dispatch(getAllPosts(posts));
+    }
+  }, [data, dispatch,posts]);
+
+  const about = useSelector((state: any) => state?.home?.about)[0];
+
+  const cont = useSelector((state: any) => state?.contact?.contactdetails);
+
+  const ob = cont[0];
+
   return (
     <>
       <footer>
         <div className="container">
           <div>
             <h1>About Us</h1>
-            <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-              tempore ullam inventore atque numquam est sint aliquid similique
-              fugiat saepe libero quisquam consequatur commodi ea eveniet,
-              itaque alias perferendis neque?
-            </div>
+            <div>{about?.excerpt}</div>
           </div>
 
           <div>
             <h1>Contact Us</h1>
             <ul>
               <li>
-                <i className="fa fa-map-marker"></i> &nbsp; Achimota Mile 7 near Ecobank
-                Accra
+                <i className="fa fa-map-marker"></i> &nbsp; {ob?.location}
               </li>
 
               <li>
-                <i className="fa fa-phone"></i> &nbsp; +233 209 877 300
+                <i className="fa fa-phone"></i> &nbsp; {ob?.phone}
               </li>
 
               <li>
-                <i className="fa fa-envelope"></i> &nbsp;  mksroofinggh@gmail.com
+                <i className="fa fa-envelope"></i> &nbsp; {ob?.email}
               </li>
             </ul>
           </div>

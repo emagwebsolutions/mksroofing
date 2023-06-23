@@ -12,7 +12,10 @@ export const fetchData = createApi({
     getslides: builder.query({
       query: (args: any) => '/fetchslides',
     }),
+    getcontact: builder.query({
+      query: (args: any) => '/fetchcontact',
+    }),
   }),
 });
 
-export const { useGetpostsQuery,useGetslidesQuery } = fetchData;
+export const { useGetpostsQuery, useGetslidesQuery, useGetcontactQuery } = fetchData;
