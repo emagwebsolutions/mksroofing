@@ -1,0 +1,26 @@
+.service {
+  padding-block: 5em;
+  background-color: #f2f2f2;
+  .wrapper {
+    background-color: white;
+    display: flex;
+    & > div {
+      flex: 5rem 1 1;
+    }
+    .para-txt {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 1rem 3rem 3rem 1rem  rgba(0,0,0, .1);
+      & > h1{
+        color: #c01d2e;
+        margin-bottom: 2rem; 
+        font-size: 3rem;
+      }
+      & > div{
+        padding-inline: 3em;
+      }
+    }
+  }
+}

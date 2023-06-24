@@ -1,0 +1,27 @@
+.product {
+  padding-block: 3em;
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    margin-bottom: 3em;
+  }
+  .product-wrapper {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    & > div {
+      flex: 25rem 1 1;
+      background-color: white;
+      padding: 1.2em;
+      box-shadow: .3rem .3rem .6rem .2rem rgba(0,0,0, .2);
+      h2{
+        color: #888;
+        padding: 1.2em;
+        background-color: #f2f2f2;
+        margin-top: .6em;
+      }
+    }
+
+  }
+}
