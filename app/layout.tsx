@@ -3,7 +3,7 @@ import store from '@/store/store';
 import './globals.scss';
 import {Provider} from 'react-redux'
 
-export const metadata = {
+ const metadata = {
   title: 'MKS Roofing Systems',
   description: 'Roofing company in Accra Ghana',
 };
