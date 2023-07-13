@@ -1,0 +1,22 @@
+.contact {
+  .short-line {
+    width: 5rem;
+    border-bottom: solid #bc1f28 0.4rem;
+    margin-block: 1.7rem;
+  }
+  & > section:nth-of-type(1) {
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    padding-block: 5em;
+  }
+  & > section:nth-of-type(2) {
+    h2 {
+      font-size: 2.6rem;
+      font-weight: bold;
+    }
+    background-color: #f8f8f8;
+    padding-block: 5em;
+  }
+}

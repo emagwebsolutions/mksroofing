@@ -10,6 +10,7 @@
 @import '../styles/about.scss';
 @import '../styles/service.scss';
 @import '../styles/product.scss';
+@import '../styles/contact.scss';
 
 :root {
   font-size: 62%;
@@ -85,7 +86,7 @@ body {
   &:before {
     content: '';
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     left: 0;
     top: 0;
     z-index: 1;
@@ -96,9 +97,9 @@ body {
   h1 {
     line-height: 4rem;
     div {
-      width: 4rem;
-      height: 2rem;
-      border-bottom: solid 0.3rem #ffcc32;
+      width: 5rem;
+      border-bottom: solid #bc1f28 0.4rem;
+      margin-block: 1.7rem;
     }
   }
 }
