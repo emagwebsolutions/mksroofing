@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {usePathname} from 'next/navigation'
 
 type Links = {
     link: string 
@@ -7,9 +8,10 @@ type Links = {
 }
 
 const Links = ({link,icon,name}: Links) => {
+  const path = usePathname()
   return (
     <li>
-    <Link href={link}>{icon? <i className={icon}></i> : ''} {name}</Link>
+    <Link href={link} className={`${path === link? 'activelnk': ''}`}>{icon? <i className={icon}></i> : ''} {name}</Link>
   </li>
   )
 }

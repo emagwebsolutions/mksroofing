@@ -7,6 +7,7 @@ import { getAllProducts } from '@/store/features/productsSlice';
 import { useGetpostsQuery } from '@/store/features/fetchQuerySlice';
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Animation from '@/components/Animation';
 
 const Products = () => {
   const { data } = useGetpostsQuery('');
@@ -27,8 +28,10 @@ const Products = () => {
     <Universal>
       <Cover name="Products" />
       <section className="bg-gray-100 text-center product">
+        <Animation>
         <h1>Our Products</h1>
         <p>Choose from our range of products</p>
+        </Animation>
         <div className="container">
           <div className="product-wrapper">
             {Object.values(products).map((v: any, k) => {

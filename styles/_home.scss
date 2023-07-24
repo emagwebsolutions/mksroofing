@@ -4,7 +4,6 @@
 
     section:nth-of-type(1) {
       display: flex;
-
       & > div {
         flex: 1rem 1 1;
       }
@@ -98,13 +97,6 @@
   }
 }
 
-
-
-
-
-
-
-
 @media (max-width: 35em) {
   .home {
     position: relative;
@@ -174,10 +166,6 @@
       }
     }
 
-
-
-
-
     section:nth-of-type(3) {
       background-image: url('/quote-bg.jpg');
       background-size: cover;
@@ -187,8 +175,7 @@
       z-index: 2;
 
       & > div {
-       padding: 2em;
-      
+        padding: 2em;
 
         & > div:nth-of-type(1) {
           h1 {
@@ -221,14 +208,5 @@
         background-color: rgba(255, 255, 255, 0.5);
       }
     }
-
-
-
-
-
-
-
-
-
   }
 }

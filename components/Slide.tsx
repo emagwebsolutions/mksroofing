@@ -3,6 +3,7 @@ import 'react-slideshow-image/dist/styles.css';
 import Image from 'next/image';
 import { useGetslidesQuery } from '@/store/features/fetchQuerySlice';
 import { useState, useEffect } from 'react';
+import Animation from './Animation';
 
 const Slider = () => {
   const [getData, setData] = useState([{ url: '' }]);
@@ -53,9 +54,11 @@ const Slider = () => {
       <div className="header-title">
         <h1>
           <span></span>
-          <span>MKS ROOFING SYSTEMS</span>
+          
+          <span><Animation>MKS ROOFING SYSTEMS  </Animation></span>
+        
         </h1>
-        <p>We are into all types of Roofing works</p>
+        <p><Animation>We are into all types of Roofing works</Animation></p>
       </div>
     </div>
   );

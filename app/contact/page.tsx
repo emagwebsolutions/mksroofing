@@ -2,29 +2,22 @@
 
 import Cover from '@/components/Cover';
 import Universal from '@/components/Universal';
-import { useForm } from 'react-hook-form';
-import { DevTool } from '@hookform/devtools';
-
+import ContactForm from '@/components/ContactForm';
+import { useSelector } from 'react-redux';
 
 const Contact = () => {
+  const cont = useSelector((state: any) => state?.contact?.contactdetails);
+  const ob = cont[0];
 
-  const form = useForm();
-  const { register, formState, control, handleSubmit } = form;
-  const { errors } = formState;
-
-  const onSubmit = (data: any) => {
-    console.log(data);
-  };
-
+  const wd = `100%`;
 
   return (
     <Universal>
       <Cover name="Contact Us" />
 
       <div className="contact">
-
         <section>
-        <div className="container">
+          <div className="container">
             <h1>Our Contact Details</h1>
             <div className="short-line"></div>
             <p>
@@ -32,13 +25,11 @@ const Contact = () => {
               below to get in touch with us today and we will get back to you
               within 24 hours.
             </p>
-            </div>
+          </div>
         </section>
 
-
-        <section>      
+        <section>
           <div className="container">
-
             <div>
               <h2>We Love To Hear From You</h2>
               <div className="short-line"></div>
@@ -46,33 +37,19 @@ const Contact = () => {
                 Please call or email contact form and we will be happy to assist
                 you.
               </p>
-              <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="form-control">
-                  <input type="text" id="fullname" {...register('fullname')} />
-                  <label htmlFor="fullname">Your name</label>
-                </div>
 
-                <div className="form-control">
-                  <input type="text" id="email" {...register('email')} />
-                  <label htmlFor="email">Your email</label>
-                </div>
-
-                <div className="form-control">
-                  <input type="text" id="subject" {...register('subject')} />
-                  <label htmlFor="">Subject</label>
-                </div>
-
-                <div className="form-control">
-                  <input type="text" id="fullname" />
-                  <label htmlFor=""></label>
-                </div>
-
-                <button type="submit">Submit</button>
-              </form>
-              <DevTool control={control} />
+              <ContactForm />
             </div>
-            <div></div>
+            <div>
+              <iframe
+                src={ob?.googlemap}
+                width={wd}
+                height="450"
+                style={{ border: 0 }}
+                loading="lazy"
+              ></iframe>
             </div>
+          </div>
         </section>
       </div>
     </Universal>

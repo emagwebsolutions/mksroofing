@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import Animation from './Animation';
 
 type Card = {
   img: string;
@@ -9,6 +10,7 @@ type Card = {
 
 const Servicescard = ({ img, title, text }: Card) => {
   return (
+    <Animation>
     <div className="bg-white service-bx">
       <div>
         <Image width="270" height="100" alt="" src={img} />
@@ -18,6 +20,7 @@ const Servicescard = ({ img, title, text }: Card) => {
         <p>{text}</p>
       </div>
     </div>
+    </Animation>
   );
 };
 

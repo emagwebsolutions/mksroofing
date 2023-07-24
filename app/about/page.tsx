@@ -1,5 +1,5 @@
 'use client';
-
+import Animation from '@/components/Animation';
 import Cover from '@/components/Cover';
 import Servicescard from '@/components/Servicescard';
 import Universal from '@/components/Universal';
@@ -14,15 +14,14 @@ const About = () => {
   const services = Object.values(serviceArr)
     .filter((v: any) => v.excerpt !== null)
     .map((v: any, k) => {
-      return (
-        <Servicescard key={k} img={v.image} title={v.title} text='' />
-      );
+      return <Servicescard key={k} img={v.image} title={v.title} text="" />;
     })
     .slice(0, 4);
 
   return (
     <Universal>
       <div className="about">
+        
         <Cover name="About Us" />
 
         <section>
@@ -34,16 +33,19 @@ const About = () => {
           </div>
         </section>
 
+
+
         <section>
           <div className="container">
-            <h2>Our Services</h2>
-            <p>Our customers are our top priority</p>
+            <h2>
+              {' '}
+              <Animation>Our Services </Animation>
+            </h2>
+            <p>
+              <Animation>Our customers are our top priority</Animation>
+            </p>
 
-            <div>
-
-            {services}
-
-            </div>
+            <div>{services}</div>
           </div>
         </section>
 
