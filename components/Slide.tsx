@@ -52,13 +52,16 @@ const Slider = () => {
       </Slide>
 
       <div className="header-title">
+
+      <Animation>
         <h1>
           <span></span>
-          
-          <span><Animation>MKS ROOFING SYSTEMS  </Animation></span>
-        
+          <span>MKS ROOFING SYSTEMS  </span>
         </h1>
-        <p><Animation>We are into all types of Roofing works</Animation></p>
+        </Animation>
+        <Animation>
+        <p>We are into all types of Roofing works</p>
+        </Animation>
       </div>
     </div>
   );

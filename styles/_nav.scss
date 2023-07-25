@@ -3,7 +3,7 @@
   color: white;
   border-radius: 6rem;
   padding-inline: 1em;
-  padding-block: .5em;
+  padding-block: 0.5em;
 }
 
 @media (min-width: 35em) {
@@ -57,7 +57,7 @@
 
 @media (max-width: 35em) {
   nav {
-    .nav-links{
+    .nav-links {
       line-height: 5rem;
     }
     .navbx {
@@ -107,7 +107,6 @@
             border-bottom: solid 0.1rem #444;
             padding-bottom: 1rem;
             margin-bottom: 3rem;
-      
           }
 
           font-size: 1.4rem;
@@ -128,11 +127,10 @@
     top: 0;
     left: 0;
     z-index: 97;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
-    padding: 0.5rem;
-    padding-left: 1rem;
+
     background-color: white;
     .strips {
       display: flex;
@@ -140,7 +138,7 @@
       justify-content: space-between;
       width: 2.5rem;
       height: 2.2rem;
-
+      margin: 0.7rem;
       span {
         display: block;
         border-bottom: 0.5rem solid #999;

@@ -40,18 +40,18 @@ export default function Home() {
             <h1>
               <Animation>Our Services</Animation>
             </h1>
-            <p>
-              <Animation>We offer the following services</Animation>
-            </p>
+
+            <Animation>
+              <p>We offer the following services</p>
+            </Animation>
           </div>
 
           <div className="container py-4">
             <div className="shadow-xl  p-10 bg-white">{services}</div>
 
-              <Button cls="button mt-10 m-auto" url="/service">
-                More Services
-              </Button>
-    
+            <Button cls="button mt-10 m-auto" url="/service">
+              More Services
+            </Button>
           </div>
         </section>
 
@@ -59,12 +59,12 @@ export default function Home() {
           <div className="container">
             <div>
               <Animation>
-              <h1>Get a Free Quote!</h1>
-              <p>
-                Whether it a brand new installation, or work on an existing
-                property, MKS Roofing Systems is a full service provider of
-                roofing.
-              </p>
+                <h1>Get a Free Quote!</h1>
+                <p>
+                  Whether it a brand new installation, or work on an existing
+                  property, MKS Roofing Systems is a full service provider of
+                  roofing.
+                </p>
               </Animation>
             </div>
 
