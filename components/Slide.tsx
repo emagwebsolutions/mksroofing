@@ -44,7 +44,7 @@ const Slider = () => {
           <div className="each-fade" key={index}>
             <Image
               priority
-              width="1300"
+              width="3000"
               height={400}
               alt=""
               src={fadeImage.url}
