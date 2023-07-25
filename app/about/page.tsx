@@ -38,10 +38,7 @@ const About = () => {
               {' '}
               <Animation>Our Services </Animation>
             </h2>
-
-            <Animation>
-              <p>Our customers are our top priority</p>
-            </Animation>
+              <p className="text-center">Our customers are our top priority</p>
 
             <div>{services}</div>
           </div>

@@ -19,7 +19,7 @@ const Service = () => {
         <div className="container">
           <div className="wrapper">
             <div>
-              <Image src={services[0]?.image} alt="" width={600} height={300} />
+              <Image src={services[0]?.image} alt="" width={2000} height={300} />
             </div>
             <div className="para-txt">
               <h1>{services[0]?.title.toUpperCase()}</h1>
@@ -36,7 +36,7 @@ const Service = () => {
             </div>
 
             <div>
-              <Image src={services[1]?.image} alt="" width={600} height={300} />
+              <Image src={services[1]?.image} alt="" width={2000} height={300} />
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Service = () => {
         <div className="container">
         <div className="wrapper">
             <div>
-              <Image src={services[2]?.image} alt="" width={600} height={300} />
+              <Image src={services[2]?.image} alt="" width={2000} height={300} />
             </div>
             <div className="para-txt">
               <h1>{services[2]?.title.toUpperCase()}</h1>
@@ -60,7 +60,7 @@ const Service = () => {
               <div>{services[3]?.excerpt}</div>
             </div>
             <div>
-              <Image src={services[3]?.image} alt="" width={600} height={300} />
+              <Image src={services[3]?.image} alt="" width={2000} height={300} />
             </div>
           </div>
         </div>
