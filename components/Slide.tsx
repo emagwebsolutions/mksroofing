@@ -35,6 +35,8 @@ const Slider = () => {
     },
   ];
 
+
+
   return (
     <div className="slide-container">
       <Slide>
@@ -42,7 +44,7 @@ const Slider = () => {
           <div className="each-fade" key={index}>
             <Image
               priority
-              width={1300}
+              width="7000"
               height={400}
               alt=""
               src={fadeImage.url}
