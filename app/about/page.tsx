@@ -33,8 +33,6 @@ const About = () => {
           </div>
         </section>
 
-
-
         <section>
           <div className="container">
             <h2>
@@ -43,9 +41,7 @@ const About = () => {
             </h2>
 
             <Animation>
-            <p>
-              Our customers are our top priority
-            </p>
+              <p>Our customers are our top priority</p>
             </Animation>
 
             <div>{services}</div>
