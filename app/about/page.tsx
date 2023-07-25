@@ -21,7 +21,6 @@ const About = () => {
   return (
     <Universal>
       <div className="about">
-        
         <Cover name="About Us" />
 
         <section>
@@ -29,7 +28,7 @@ const About = () => {
             <PortableText value={about?.body} />
           </div>
           <div>
-            <Image src={about?.image} width="700" height="500" alt="" />
+            <Image src={about?.image} width="3000" height="500" alt="" />
           </div>
         </section>
 
